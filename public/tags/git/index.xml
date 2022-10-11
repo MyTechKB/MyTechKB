@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on MyTechKB</title>
+    <link>https://mytechkb.com/tags/git/</link>
+    <description>Recent content in Git on MyTechKB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Dec 2021 21:23:08 -0600</lastBuildDate><atom:link href="https://mytechkb.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Commands</title>
+      <link>https://mytechkb.com/post/git_commands/</link>
+      <pubDate>Tue, 14 Dec 2021 21:23:08 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/git_commands/</guid>
+      <description>Initialize global user git config --global user.name &amp;#34;Your Name&amp;#34; git config --global user.email &amp;#34;youremail@yourdomain.com&amp;#34; Credentials stored with in ~/.git-credentials file git config --global credential.helper store Check if repo is ahead or behind git fetch # Following command lists &amp;#34;{local} {remote}&amp;#34; git for-each-ref --format=&amp;#34;%(refname:short) %(upstream:short)&amp;#34; refs/heads # Run next command with the output of the previous command git rev-list --left-right {local}...{remote} # IF output contains &amp;#39;&amp;lt;&amp;#39;, then local is ahead - perform push # If output contains &amp;#39;&amp;gt;&amp;#39;, then remote is ahead - perform pull Clone submodule git submodule init git submodule update Remove submodule # Remove the submodule entry from .</description>
+    </item>
+    
+  </channel>
+</rss>

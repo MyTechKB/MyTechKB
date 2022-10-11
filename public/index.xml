@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Tech Knowledge Base on MyTechKB</title>
+    <link>https://mytechkb.com/</link>
+    <description>Recent content in My Tech Knowledge Base on MyTechKB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Aug 2022 14:30:58 -0500</lastBuildDate><atom:link href="https://mytechkb.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Network Enumeration</title>
+      <link>https://mytechkb.com/post/enumeration/</link>
+      <pubDate>Wed, 24 Aug 2022 14:30:58 -0500</pubDate>
+      
+      <guid>https://mytechkb.com/post/enumeration/</guid>
+      <description>NMAP # Host Discovery - no port scan nmap -sn 192.168.1.0/24 # Port Discovery - using list of IPs nmap -iL &amp;lt;ip list&amp;gt; # Service delatils nmap -iL &amp;lt;ip list&amp;gt; -sV # Details and OS ID nmap -iL &amp;lt;ip list&amp;gt; -sV -O # T4 for faster execution nmap -sV --allports -T4 192.168.1.0/24 Network Tools nmap, ping, traceroute, netstat, ns lookup, and dig</description>
+    </item>
+    
+    <item>
+      <title>Metasploit</title>
+      <link>https://mytechkb.com/post/metasploit/</link>
+      <pubDate>Thu, 30 Jun 2022 14:57:29 -0500</pubDate>
+      
+      <guid>https://mytechkb.com/post/metasploit/</guid>
+      <description>METASPLOIT:
+  executable: msfconsole
+ search: find modules use ???: enables the use of module show options: shows required options set OPTION VALUE: sets options to values unset [OPTION|all]: clear option or all options setg/unsetg: set/unset option globally show payloads: show possible payloads to be used info: shows info on module back: exit a used module exploit/run: execute an exploit background/CTRL+Z: sends command to background session sessions: list sessions sessions -i #: switch to interactive session    use database:</description>
+    </item>
+    
+    <item>
+      <title>Network and Security</title>
+      <link>https://mytechkb.com/post/network_security/</link>
+      <pubDate>Thu, 30 Jun 2022 14:51:32 -0500</pubDate>
+      
+      <guid>https://mytechkb.com/post/network_security/</guid>
+      <description>OSI Model:
+ Application (7) - HTTP, FTP, SMTP, POP3, IMAP, etc. Presentation (6) - SSL/TLS Session (5) Transport (4) - TCP, UDP Network (3) - IPv4, IPv6 Data Linkn (2) Physical (1) - network cards, cables    TCP/IP Model: (older)
+ Application (7,6,5) Transport (4) Internet (3) Network Interface (2,1)    Confidentiality, Integrity, and Availability (CIA):
+  Confidentiality refers to keeping the contents of the communications accessible to the intended parties.</description>
+    </item>
+    
+    <item>
+      <title>Nmap Information</title>
+      <link>https://mytechkb.com/post/nmap/</link>
+      <pubDate>Thu, 30 Jun 2022 14:30:58 -0500</pubDate>
+      
+      <guid>https://mytechkb.com/post/nmap/</guid>
+      <description>Options NMAP:
+ Live Host Discovery:  ARP Scan sudo nmap -PR -sn MACHINE_IP/24 ICMP Echo Scan sudo nmap -PE -sn MACHINE_IP/24 ICMP Timestamp Scan sudo nmap -PP -sn MACHINE_IP/24 ICMP Address Mask Scan sudo nmap -PM -sn MACHINE_IP/24 TCP SYN Ping Scan sudo nmap -PS22,80,443 -sn MACHINE_IP/30 TCP ACK Ping Scan sudo nmap -PA22,80,443 -sn MACHINE_IP/30 UDP Ping Scan sudo nmap -PU53,161,162 -sn MACHINE_IP/30 OPTION -n: Do not send DNS queries OPTION -sn: Host discovery without port-scanning   Basic Port Scans:  TCP Connect Scan nmap -sT MACHINE_IP TCP SYN Scan sudo nmap -sS MACHINE_IP UDP Scan sudo nmap -sU MACHINE_IP OPTION -p-: all ports OPTION -p1-1023: scan ports 1 to 1023 OPTION -F: 100 most common ports (default 1000) OPTION -r: scan ports in consecutive order OPTION -T&amp;lt;0-5&amp;gt;: -T0 being the slowest and T5 the fastest T4 used in CTF, T1 in real engagements OPTION &amp;ndash;max-rate 50: rate &amp;lt;= 50 packets/sec OPTION &amp;ndash;min-rate 15: rate &amp;gt;= 15 packets/sec OPTION &amp;ndash;min-parallelism 100: at least 100 probes in parallel   Advanced Port Scans:  TCP Null Scan sudo nmap -sN MACHINE_IP TCP FIN Scan sudo nmap -sF MACHINE_IP TCP Xmas Scan sudo nmap -sX MACHINE_IP TCP Maimon Scan sudo nmap -sM MACHINE_IP (only works on BSD) TCP ACK Scan sudo nmap -sA MACHINE_IP (tests firewall rules) TCP Window Scan sudo nmap -sW MACHINE_IP (tests firewall rules) Custom TCP Scan sudo nmap &amp;ndash;scanflags URGACKPSHRSTSYNFIN MACHINE_IP Spoofed Source IP sudo nmap -S SPOOFED_IP MACHINE_IP Decoy Scan nmap -D DECOY_IP,ME MACHINE_IP Idle (Zombie) Scan sudo nmap -sI ZOMBIE_IP MACHINE_IP OPTION &amp;ndash;spoof-mac SPOOFED_MAC: Spoofed MAC Address OPTION -f: Fragment IP data into 8 bytes OPTION -ff: Fragment IP data into 16 bytes OPTION &amp;ndash;source-port PORT_NUM: specify source port number OPTION &amp;ndash;data-length NUM: append random data to reach given length OPTION &amp;ndash;reason: explains how Nmap made its conclusion OPTION -v: verbose OPTION -vv: very verbose OPTION -d: debugging OPTION -dd: more details for debugging   Post Port Scans:  OPTION -sV: determine service/version info on open ports OPTION -sV &amp;ndash;version-light: try the most likely probes (2) OPTION -sV &amp;ndash;version-all: try all available probes (9) OPTION -O: detect OS OPTION &amp;ndash;traceroute: run traceroute to target OPTION &amp;ndash;script=SCRIPTS: Nmap scripts to run OPTION -sC or &amp;ndash;script=default: run default scripts OPTION -A: equivalent to -sV -O -sC &amp;ndash;traceroute OPTION -oN: save output in normal format OPTION -oG: save output in grepable format OPTION -oX: save output in XML format OPTION -oA: save output in normal, XML and Grepable formats    Script Category | Description</description>
+    </item>
+    
+    <item>
+      <title>Docker Commands</title>
+      <link>https://mytechkb.com/post/docker_commands/</link>
+      <pubDate>Wed, 19 Jan 2022 22:22:53 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/docker_commands/</guid>
+      <description>Start and stop all containers # Stop all containers docker stop $(docker ps -a -q) # Start all containers docker start $(docker ps -a -q) Create a Docker Swarm docker swarm init # Will give you join command which includes token and ip_address:port docker swarm join --token [token] [ip_address]:[port] # To get a join command for a worker docker swarm join-token worker # To get a join command for a manager docker swarm join-token manager # Check swarm with docker node ls </description>
+    </item>
+    
+    <item>
+      <title>Rust Environment</title>
+      <link>https://mytechkb.com/post/rust_environment/</link>
+      <pubDate>Sun, 02 Jan 2022 23:47:03 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/rust_environment/</guid>
+      <description>Install Rust curl --proto &amp;#39;=https&amp;#39; --tlsv1.2 -sSf https://sh.rustup.rs | sh Update Rust rustup update Cargo commands cargo build # build your project cargo run # run your project cargo test # test your project cargo doc # build documentation for your project cargo publish # publish a library to crates.io Create new project cargo new hello-rust # Creates a new dir called hello-rust hello-rust |- Cargo.toml |- src |- main.rs CI Steps cargo build cargo test # Run Tests cargo tarpaulin --ignore-tests # Code Coverage (install using &amp;#39;cargo install cargo-tarpaulin&amp;#39;) cargo clippy -- -D warnings # Linting (fail with warnings) cargo fmt -- --check # Format (fail with unformat) cargo audit # Security Audit </description>
+    </item>
+    
+    <item>
+      <title>Git Commands</title>
+      <link>https://mytechkb.com/post/git_commands/</link>
+      <pubDate>Tue, 14 Dec 2021 21:23:08 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/git_commands/</guid>
+      <description>Initialize global user git config --global user.name &amp;#34;Your Name&amp;#34; git config --global user.email &amp;#34;youremail@yourdomain.com&amp;#34; Credentials stored with in ~/.git-credentials file git config --global credential.helper store Check if repo is ahead or behind git fetch # Following command lists &amp;#34;{local} {remote}&amp;#34; git for-each-ref --format=&amp;#34;%(refname:short) %(upstream:short)&amp;#34; refs/heads # Run next command with the output of the previous command git rev-list --left-right {local}...{remote} # IF output contains &amp;#39;&amp;lt;&amp;#39;, then local is ahead - perform push # If output contains &amp;#39;&amp;gt;&amp;#39;, then remote is ahead - perform pull Clone submodule git submodule init git submodule update Remove submodule # Remove the submodule entry from .</description>
+    </item>
+    
+    <item>
+      <title>Wireguard Commands</title>
+      <link>https://mytechkb.com/post/wireguard_commands/</link>
+      <pubDate>Tue, 14 Dec 2021 21:23:08 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/wireguard_commands/</guid>
+      <description>Startup Command sudo wg-quick up wg0 </description>
+    </item>
+    
+    <item>
+      <title>Blogging Information</title>
+      <link>https://mytechkb.com/post/blogging_information/</link>
+      <pubDate>Mon, 13 Dec 2021 00:43:09 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/blogging_information/</guid>
+      <description>General Getting Started:  Blog Tyrant Blog Tyrant - Article AfterNerd - Article  Wordpress links:  Divi Theme  Photo Sites:  Blog Tyrant - Article FreeImages Unsplash Pixabay PicJumbo Shutterstock - not free  Blogging Topics:  Programming - python, nodejs, c/c++, java, html/css/javascript, bash, linux Selfhosting - proxmox, docker, apps, servers, vps HomeAutomation - homeassistant, nodered, mqtt, iot, esp8266, tasmota Hardware - raspberry pi, ubiquity, servers, pinebook Privacy - degoogle, opensource  Analytics:  Reddit - selfhosted analytics Plausible Umami Matomo Shynet  Self-hosted Comments  Cactus Comments Remark42 Commento  </description>
+    </item>
+    
+    <item>
+      <title>chmod Hierarchy</title>
+      <link>https://mytechkb.com/post/chmod_hierarchy/</link>
+      <pubDate>Mon, 13 Dec 2021 00:08:33 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/chmod_hierarchy/</guid>
+      <description>Linux - Problem: How to set chmod for a folder and all of its subfolders and files in Linux Ubuntu Terminal ?
+Linux - Solution 1: chmod -R 755 will set this as permissions to all files and folders in the tree. You can use the find command. For example: # To change all the directories to 755 (drwxr-xr-x): find /opt/lampp/htdocs -type d -exec chmod 755 {} \; # To change all the files to 644 (-rw-r--r--): find /opt/lampp/htdocs -type f -exec chmod 644 {} \;</description>
+    </item>
+    
+    <item>
+      <title>Mysql Commands</title>
+      <link>https://mytechkb.com/post/mysql_commands/</link>
+      <pubDate>Mon, 13 Dec 2021 00:07:35 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/mysql_commands/</guid>
+      <description>Enter MySQL prompt as root user sudo mysql -u root -p Show Users and Databases show databases; select host, user, password from mysql.user; User Commands # To create a new MySQL user account, run the following command: CREATE USER &amp;#39;newuser&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;user_password&amp;#39;; # To grant access from another host, change the hostname part (localhost) with the remote machine IP. # For example, to grant access from a machine with IP 10.</description>
+    </item>
+    
+    <item>
+      <title>Programming Resources</title>
+      <link>https://mytechkb.com/post/programming_resources/</link>
+      <pubDate>Sun, 12 Dec 2021 23:58:22 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/programming_resources/</guid>
+      <description>General Programming  Reddit r/learnprogramming FAQ Reddit r/dailyprogrammer Coding Challenges Hit a Wall article Twelve Factor App Simple Programmer Clever Programmer Geek for Geeks  Find Starter Projects:  First Timers Only Up For Grabs Good First Issues com Good First Issue dev  Python Resources:  PyDon&amp;rsquo;ts Python Style Guide Zen of Python Hitchhikers Guide to Python Full Stack Python Flask Microblogging Tutorial  HTML/CSS/JavaScript Resources:  CodePen - build &amp;amp; test MDN Web Docs Char Reference Color Picker CSS Font Stack Coolors - Trending Colors Specificity Calculator Easing Functions Unsplash - Free Photos Google Fonts CSS Reset Bootstrap Docs  </description>
+    </item>
+    
+    <item>
+      <title>General Proxmox Commands</title>
+      <link>https://mytechkb.com/post/general_proxmox_commands/</link>
+      <pubDate>Sun, 12 Dec 2021 23:48:53 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/general_proxmox_commands/</guid>
+      <description>Unlock locked VM qm unlock 100 # or pct unlock 100 # for CT </description>
+    </item>
+    
+    <item>
+      <title>Remove Snap from Ubuntu</title>
+      <link>https://mytechkb.com/post/remove_snap_from_ubuntu/</link>
+      <pubDate>Sun, 12 Dec 2021 23:45:45 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/remove_snap_from_ubuntu/</guid>
+      <description>Remove snap from ubuntu snap list sudo snap remove &amp;lt;package_name&amp;gt; #(remove snapd last) sudo umount /snap/core/xxxx sudo umount /var/snap sudo apt purge snapd sudo apt autoremove </description>
+    </item>
+    
+    <item>
+      <title>Proxmox Expand HD Space</title>
+      <link>https://mytechkb.com/post/proxmox_expand_hd/</link>
+      <pubDate>Sun, 12 Dec 2021 23:40:44 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/proxmox_expand_hd/</guid>
+      <description>Expand HD space in Proxmox VM lsblk sudo fdisk -l /dev/sda sudo parted /dev/sda - print - F (fix) - resizepart 3 100% - quit sudo fdisk -l /dev/sda sudo pvresize /dev/sda3 sudo lvextend ubuntu-vg/ubuntu-lv -l+100%FREE sudo resize2fs /dev/ubuntu-vg/ubuntu-lv sudo reboot </description>
+    </item>
+    
+    <item>
+      <title>NodeJS Environment</title>
+      <link>https://mytechkb.com/post/nodejs_environment/</link>
+      <pubDate>Sun, 12 Dec 2021 23:30:21 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/nodejs_environment/</guid>
+      <description>To create a new package.json npm init -y To install a package npm i &amp;lt;package-name&amp;gt; sudo npm i -g nodemon To install a local package.json npm install To run node file node app.js To use nodemon to auto-restart server nodemon app.js </description>
+    </item>
+    
+    <item>
+      <title>Python Environment</title>
+      <link>https://mytechkb.com/post/python_environment/</link>
+      <pubDate>Sun, 12 Dec 2021 23:22:14 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/python_environment/</guid>
+      <description>Create and start Python Virtual Environment python3 -m venv venv source venv/bin/activate To install a local requirements.txt venv/bin/pip install -r requirements.txt venv/bin/pip install gunicorn To Exit Venv deactivate To create requirements.txt pip freeze &amp;gt; requirements.txt To remove installed plugins pip freeze | xargs pip uninstall -y To run flask app flask app.py </description>
+    </item>
+    
+    <item>
+      <title>Hugo Commands</title>
+      <link>https://mytechkb.com/post/hugo_commands/</link>
+      <pubDate>Sun, 12 Dec 2021 21:58:14 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/hugo_commands/</guid>
+      <description>Create a new site hugo new site quickstart Add a theme  Hugo Themes Don&amp;rsquo;t use the submodule method since that won&amp;rsquo;t allow you to customize the theme. Instead, download the zip file and extract into the themes directory.  cd quickstart git init git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke Add some content hugo new post/my-first-post.md Start the Hugo Server hugo server -D Site Configuration Open up config.toml in a text editor</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://mytechkb.com/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mytechkb.com/contact/</guid>
+      <description>This is an example of a custom shortcode that you can put right into your content. You will need to add a form action to the the shortcode to make it work. Check out Formspree for a simple, free form service.
+Your Name Email Address An email address is required.  Message   </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CLI on MyTechKB</title>
+    <link>https://mytechkb.com/tags/cli/</link>
+    <description>Recent content in CLI on MyTechKB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Dec 2021 00:08:33 -0600</lastBuildDate><atom:link href="https://mytechkb.com/tags/cli/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>chmod Hierarchy</title>
+      <link>https://mytechkb.com/post/chmod_hierarchy/</link>
+      <pubDate>Mon, 13 Dec 2021 00:08:33 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/chmod_hierarchy/</guid>
+      <description>Linux - Problem: How to set chmod for a folder and all of its subfolders and files in Linux Ubuntu Terminal ?
+Linux - Solution 1: chmod -R 755 will set this as permissions to all files and folders in the tree. You can use the find command. For example: # To change all the directories to 755 (drwxr-xr-x): find /opt/lampp/htdocs -type d -exec chmod 755 {} \; # To change all the files to 644 (-rw-r--r--): find /opt/lampp/htdocs -type f -exec chmod 644 {} \;</description>
+    </item>
+    
+  </channel>
+</rss>

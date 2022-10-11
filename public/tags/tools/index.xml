@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on MyTechKB</title>
+    <link>https://mytechkb.com/tags/tools/</link>
+    <description>Recent content in Tools on MyTechKB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Aug 2022 14:30:58 -0500</lastBuildDate><atom:link href="https://mytechkb.com/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Network Enumeration</title>
+      <link>https://mytechkb.com/post/enumeration/</link>
+      <pubDate>Wed, 24 Aug 2022 14:30:58 -0500</pubDate>
+      
+      <guid>https://mytechkb.com/post/enumeration/</guid>
+      <description>NMAP # Host Discovery - no port scan nmap -sn 192.168.1.0/24 # Port Discovery - using list of IPs nmap -iL &amp;lt;ip list&amp;gt; # Service delatils nmap -iL &amp;lt;ip list&amp;gt; -sV # Details and OS ID nmap -iL &amp;lt;ip list&amp;gt; -sV -O # T4 for faster execution nmap -sV --allports -T4 192.168.1.0/24 Network Tools nmap, ping, traceroute, netstat, ns lookup, and dig</description>
+    </item>
+    
+    <item>
+      <title>Metasploit</title>
+      <link>https://mytechkb.com/post/metasploit/</link>
+      <pubDate>Thu, 30 Jun 2022 14:57:29 -0500</pubDate>
+      
+      <guid>https://mytechkb.com/post/metasploit/</guid>
+      <description>METASPLOIT:
+  executable: msfconsole
+ search: find modules use ???: enables the use of module show options: shows required options set OPTION VALUE: sets options to values unset [OPTION|all]: clear option or all options setg/unsetg: set/unset option globally show payloads: show possible payloads to be used info: shows info on module back: exit a used module exploit/run: execute an exploit background/CTRL+Z: sends command to background session sessions: list sessions sessions -i #: switch to interactive session    use database:</description>
+    </item>
+    
+    <item>
+      <title>Network and Security</title>
+      <link>https://mytechkb.com/post/network_security/</link>
+      <pubDate>Thu, 30 Jun 2022 14:51:32 -0500</pubDate>
+      
+      <guid>https://mytechkb.com/post/network_security/</guid>
+      <description>OSI Model:
+ Application (7) - HTTP, FTP, SMTP, POP3, IMAP, etc. Presentation (6) - SSL/TLS Session (5) Transport (4) - TCP, UDP Network (3) - IPv4, IPv6 Data Linkn (2) Physical (1) - network cards, cables    TCP/IP Model: (older)
+ Application (7,6,5) Transport (4) Internet (3) Network Interface (2,1)    Confidentiality, Integrity, and Availability (CIA):
+  Confidentiality refers to keeping the contents of the communications accessible to the intended parties.</description>
+    </item>
+    
+    <item>
+      <title>Nmap Information</title>
+      <link>https://mytechkb.com/post/nmap/</link>
+      <pubDate>Thu, 30 Jun 2022 14:30:58 -0500</pubDate>
+      
+      <guid>https://mytechkb.com/post/nmap/</guid>
+      <description>Options NMAP:
+ Live Host Discovery:  ARP Scan sudo nmap -PR -sn MACHINE_IP/24 ICMP Echo Scan sudo nmap -PE -sn MACHINE_IP/24 ICMP Timestamp Scan sudo nmap -PP -sn MACHINE_IP/24 ICMP Address Mask Scan sudo nmap -PM -sn MACHINE_IP/24 TCP SYN Ping Scan sudo nmap -PS22,80,443 -sn MACHINE_IP/30 TCP ACK Ping Scan sudo nmap -PA22,80,443 -sn MACHINE_IP/30 UDP Ping Scan sudo nmap -PU53,161,162 -sn MACHINE_IP/30 OPTION -n: Do not send DNS queries OPTION -sn: Host discovery without port-scanning   Basic Port Scans:  TCP Connect Scan nmap -sT MACHINE_IP TCP SYN Scan sudo nmap -sS MACHINE_IP UDP Scan sudo nmap -sU MACHINE_IP OPTION -p-: all ports OPTION -p1-1023: scan ports 1 to 1023 OPTION -F: 100 most common ports (default 1000) OPTION -r: scan ports in consecutive order OPTION -T&amp;lt;0-5&amp;gt;: -T0 being the slowest and T5 the fastest T4 used in CTF, T1 in real engagements OPTION &amp;ndash;max-rate 50: rate &amp;lt;= 50 packets/sec OPTION &amp;ndash;min-rate 15: rate &amp;gt;= 15 packets/sec OPTION &amp;ndash;min-parallelism 100: at least 100 probes in parallel   Advanced Port Scans:  TCP Null Scan sudo nmap -sN MACHINE_IP TCP FIN Scan sudo nmap -sF MACHINE_IP TCP Xmas Scan sudo nmap -sX MACHINE_IP TCP Maimon Scan sudo nmap -sM MACHINE_IP (only works on BSD) TCP ACK Scan sudo nmap -sA MACHINE_IP (tests firewall rules) TCP Window Scan sudo nmap -sW MACHINE_IP (tests firewall rules) Custom TCP Scan sudo nmap &amp;ndash;scanflags URGACKPSHRSTSYNFIN MACHINE_IP Spoofed Source IP sudo nmap -S SPOOFED_IP MACHINE_IP Decoy Scan nmap -D DECOY_IP,ME MACHINE_IP Idle (Zombie) Scan sudo nmap -sI ZOMBIE_IP MACHINE_IP OPTION &amp;ndash;spoof-mac SPOOFED_MAC: Spoofed MAC Address OPTION -f: Fragment IP data into 8 bytes OPTION -ff: Fragment IP data into 16 bytes OPTION &amp;ndash;source-port PORT_NUM: specify source port number OPTION &amp;ndash;data-length NUM: append random data to reach given length OPTION &amp;ndash;reason: explains how Nmap made its conclusion OPTION -v: verbose OPTION -vv: very verbose OPTION -d: debugging OPTION -dd: more details for debugging   Post Port Scans:  OPTION -sV: determine service/version info on open ports OPTION -sV &amp;ndash;version-light: try the most likely probes (2) OPTION -sV &amp;ndash;version-all: try all available probes (9) OPTION -O: detect OS OPTION &amp;ndash;traceroute: run traceroute to target OPTION &amp;ndash;script=SCRIPTS: Nmap scripts to run OPTION -sC or &amp;ndash;script=default: run default scripts OPTION -A: equivalent to -sV -O -sC &amp;ndash;traceroute OPTION -oN: save output in normal format OPTION -oG: save output in grepable format OPTION -oX: save output in XML format OPTION -oA: save output in normal, XML and Grepable formats    Script Category | Description</description>
+    </item>
+    
+  </channel>
+</rss>

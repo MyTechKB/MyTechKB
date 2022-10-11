@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on MyTechKB</title>
+    <link>https://mytechkb.com/tags/docker/</link>
+    <description>Recent content in Docker on MyTechKB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 19 Jan 2022 22:22:53 -0600</lastBuildDate><atom:link href="https://mytechkb.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker Commands</title>
+      <link>https://mytechkb.com/post/docker_commands/</link>
+      <pubDate>Wed, 19 Jan 2022 22:22:53 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/docker_commands/</guid>
+      <description>Start and stop all containers # Stop all containers docker stop $(docker ps -a -q) # Start all containers docker start $(docker ps -a -q) Create a Docker Swarm docker swarm init # Will give you join command which includes token and ip_address:port docker swarm join --token [token] [ip_address]:[port] # To get a join command for a worker docker swarm join-token worker # To get a join command for a manager docker swarm join-token manager # Check swarm with docker node ls </description>
+    </item>
+    
+  </channel>
+</rss>

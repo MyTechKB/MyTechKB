@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MySQL on MyTechKB</title>
+    <link>https://mytechkb.com/tags/mysql/</link>
+    <description>Recent content in MySQL on MyTechKB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Dec 2021 00:07:35 -0600</lastBuildDate><atom:link href="https://mytechkb.com/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mysql Commands</title>
+      <link>https://mytechkb.com/post/mysql_commands/</link>
+      <pubDate>Mon, 13 Dec 2021 00:07:35 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/mysql_commands/</guid>
+      <description>Enter MySQL prompt as root user sudo mysql -u root -p Show Users and Databases show databases; select host, user, password from mysql.user; User Commands # To create a new MySQL user account, run the following command: CREATE USER &amp;#39;newuser&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;user_password&amp;#39;; # To grant access from another host, change the hostname part (localhost) with the remote machine IP. # For example, to grant access from a machine with IP 10.</description>
+    </item>
+    
+  </channel>
+</rss>

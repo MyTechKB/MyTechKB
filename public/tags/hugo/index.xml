@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on MyTechKB</title>
+    <link>https://mytechkb.com/tags/hugo/</link>
+    <description>Recent content in Hugo on MyTechKB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Dec 2021 21:58:14 -0600</lastBuildDate><atom:link href="https://mytechkb.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo Commands</title>
+      <link>https://mytechkb.com/post/hugo_commands/</link>
+      <pubDate>Sun, 12 Dec 2021 21:58:14 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/hugo_commands/</guid>
+      <description>Create a new site hugo new site quickstart Add a theme  Hugo Themes Don&amp;rsquo;t use the submodule method since that won&amp;rsquo;t allow you to customize the theme. Instead, download the zip file and extract into the themes directory.  cd quickstart git init git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke Add some content hugo new post/my-first-post.md Start the Hugo Server hugo server -D Site Configuration Open up config.toml in a text editor</description>
+    </item>
+    
+  </channel>
+</rss>

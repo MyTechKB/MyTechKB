@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on MyTechKB</title>
+    <link>https://mytechkb.com/tags/security/</link>
+    <description>Recent content in Security on MyTechKB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Jun 2022 14:57:29 -0500</lastBuildDate><atom:link href="https://mytechkb.com/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Metasploit</title>
+      <link>https://mytechkb.com/post/metasploit/</link>
+      <pubDate>Thu, 30 Jun 2022 14:57:29 -0500</pubDate>
+      
+      <guid>https://mytechkb.com/post/metasploit/</guid>
+      <description>METASPLOIT:
+  executable: msfconsole
+ search: find modules use ???: enables the use of module show options: shows required options set OPTION VALUE: sets options to values unset [OPTION|all]: clear option or all options setg/unsetg: set/unset option globally show payloads: show possible payloads to be used info: shows info on module back: exit a used module exploit/run: execute an exploit background/CTRL+Z: sends command to background session sessions: list sessions sessions -i #: switch to interactive session    use database:</description>
+    </item>
+    
+    <item>
+      <title>Network and Security</title>
+      <link>https://mytechkb.com/post/network_security/</link>
+      <pubDate>Thu, 30 Jun 2022 14:51:32 -0500</pubDate>
+      
+      <guid>https://mytechkb.com/post/network_security/</guid>
+      <description>OSI Model:
+ Application (7) - HTTP, FTP, SMTP, POP3, IMAP, etc. Presentation (6) - SSL/TLS Session (5) Transport (4) - TCP, UDP Network (3) - IPv4, IPv6 Data Linkn (2) Physical (1) - network cards, cables    TCP/IP Model: (older)
+ Application (7,6,5) Transport (4) Internet (3) Network Interface (2,1)    Confidentiality, Integrity, and Availability (CIA):
+  Confidentiality refers to keeping the contents of the communications accessible to the intended parties.</description>
+    </item>
+    
+  </channel>
+</rss>

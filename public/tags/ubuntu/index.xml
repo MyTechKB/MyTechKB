@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ubuntu on MyTechKB</title>
+    <link>https://mytechkb.com/tags/ubuntu/</link>
+    <description>Recent content in Ubuntu on MyTechKB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Dec 2021 23:45:45 -0600</lastBuildDate><atom:link href="https://mytechkb.com/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Remove Snap from Ubuntu</title>
+      <link>https://mytechkb.com/post/remove_snap_from_ubuntu/</link>
+      <pubDate>Sun, 12 Dec 2021 23:45:45 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/remove_snap_from_ubuntu/</guid>
+      <description>Remove snap from ubuntu snap list sudo snap remove &amp;lt;package_name&amp;gt; #(remove snapd last) sudo umount /snap/core/xxxx sudo umount /var/snap sudo apt purge snapd sudo apt autoremove </description>
+    </item>
+    
+  </channel>
+</rss>

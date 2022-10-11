@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HTML on MyTechKB</title>
+    <link>https://mytechkb.com/tags/html/</link>
+    <description>Recent content in HTML on MyTechKB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Dec 2021 23:58:22 -0600</lastBuildDate><atom:link href="https://mytechkb.com/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Programming Resources</title>
+      <link>https://mytechkb.com/post/programming_resources/</link>
+      <pubDate>Sun, 12 Dec 2021 23:58:22 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/programming_resources/</guid>
+      <description>General Programming  Reddit r/learnprogramming FAQ Reddit r/dailyprogrammer Coding Challenges Hit a Wall article Twelve Factor App Simple Programmer Clever Programmer Geek for Geeks  Find Starter Projects:  First Timers Only Up For Grabs Good First Issues com Good First Issue dev  Python Resources:  PyDon&amp;rsquo;ts Python Style Guide Zen of Python Hitchhikers Guide to Python Full Stack Python Flask Microblogging Tutorial  HTML/CSS/JavaScript Resources:  CodePen - build &amp;amp; test MDN Web Docs Char Reference Color Picker CSS Font Stack Coolors - Trending Colors Specificity Calculator Easing Functions Unsplash - Free Photos Google Fonts CSS Reset Bootstrap Docs  </description>
+    </item>
+    
+  </channel>
+</rss>

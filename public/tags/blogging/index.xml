@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogging on MyTechKB</title>
+    <link>https://mytechkb.com/tags/blogging/</link>
+    <description>Recent content in Blogging on MyTechKB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Dec 2021 00:43:09 -0600</lastBuildDate><atom:link href="https://mytechkb.com/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blogging Information</title>
+      <link>https://mytechkb.com/post/blogging_information/</link>
+      <pubDate>Mon, 13 Dec 2021 00:43:09 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/blogging_information/</guid>
+      <description>General Getting Started:  Blog Tyrant Blog Tyrant - Article AfterNerd - Article  Wordpress links:  Divi Theme  Photo Sites:  Blog Tyrant - Article FreeImages Unsplash Pixabay PicJumbo Shutterstock - not free  Blogging Topics:  Programming - python, nodejs, c/c++, java, html/css/javascript, bash, linux Selfhosting - proxmox, docker, apps, servers, vps HomeAutomation - homeassistant, nodered, mqtt, iot, esp8266, tasmota Hardware - raspberry pi, ubiquity, servers, pinebook Privacy - degoogle, opensource  Analytics:  Reddit - selfhosted analytics Plausible Umami Matomo Shynet  Self-hosted Comments  Cactus Comments Remark42 Commento  </description>
+    </item>
+    
+    <item>
+      <title>Hugo Commands</title>
+      <link>https://mytechkb.com/post/hugo_commands/</link>
+      <pubDate>Sun, 12 Dec 2021 21:58:14 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/hugo_commands/</guid>
+      <description>Create a new site hugo new site quickstart Add a theme  Hugo Themes Don&amp;rsquo;t use the submodule method since that won&amp;rsquo;t allow you to customize the theme. Instead, download the zip file and extract into the themes directory.  cd quickstart git init git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke Add some content hugo new post/my-first-post.md Start the Hugo Server hugo server -D Site Configuration Open up config.toml in a text editor</description>
+    </item>
+    
+  </channel>
+</rss>

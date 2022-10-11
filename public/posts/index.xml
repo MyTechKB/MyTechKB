@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on MyTechKB</title>
+    <link>https://mytechkb.com/posts/</link>
+    <description>Recent content in Posts on MyTechKB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Dec 2021 21:23:08 -0600</lastBuildDate><atom:link href="https://mytechkb.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Commands</title>
+      <link>https://mytechkb.com/posts/git_commands/</link>
+      <pubDate>Tue, 14 Dec 2021 21:23:08 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/posts/git_commands/</guid>
+      <description>Initialize global user git config --global user.name &amp;#34;Your Name&amp;#34; git config --global user.email &amp;#34;youremail@yourdomain.com&amp;#34; Credentials stored with in ~/.git-credentials file git config --global credential.helper store Clone submodule git submodule init git submodule update Remove submodule mv &amp;lt;yourSubmodule&amp;gt; &amp;lt;yourSubmodule&amp;gt;_tmp git submodule deinit &amp;lt;yourSubmodule&amp;gt; git rm &amp;lt;yourSubmodule&amp;gt; mv &amp;lt;yourSubmodule&amp;gt;_tmp &amp;lt;yourSubmodule&amp;gt; git add &amp;lt;yourSubmodule&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>Blogging Information</title>
+      <link>https://mytechkb.com/posts/blogging_information/</link>
+      <pubDate>Mon, 13 Dec 2021 00:43:09 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/posts/blogging_information/</guid>
+      <description>General Getting Started:  Blog Tyrant Blog Tyrant - Article AfterNerd - Article  Wordpress links:  Divi Theme  Photo Sites:  Blog Tyrant - Article FreeImages Unsplash Pixabay PicJumbo Shutterstock - not free  Blogging Topics:  Programming - python, nodejs, c/c++, java, html/css/javascript, bash, linux Selfhosting - proxmox, docker, apps, servers, vps HomeAutomation - homeassistant, nodered, mqtt, iot, esp8266, tasmota Hardware - raspberry pi, ubiquity, servers, pinebook Privacy - degoogle, opensource  Analytics:  Reddit - selfhosted analytics Plausible Umami Matomo Shynet  Self-hosted Comments  Cactus Comments Remark42 Commento  </description>
+    </item>
+    
+    <item>
+      <title>chmod Hierarchy</title>
+      <link>https://mytechkb.com/posts/chmod_hierarchy/</link>
+      <pubDate>Mon, 13 Dec 2021 00:08:33 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/posts/chmod_hierarchy/</guid>
+      <description>Linux - Problem: How to set chmod for a folder and all of its subfolders and files in Linux Ubuntu Terminal ?
+Linux - Solution 1: chmod -R 755 will set this as permissions to all files and folders in the tree. You can use the find command. For example: # To change all the directories to 755 (drwxr-xr-x): find /opt/lampp/htdocs -type d -exec chmod 755 {} \; # To change all the files to 644 (-rw-r--r--): find /opt/lampp/htdocs -type f -exec chmod 644 {} \;</description>
+    </item>
+    
+    <item>
+      <title>Mysql Commands</title>
+      <link>https://mytechkb.com/posts/mysql_commands/</link>
+      <pubDate>Mon, 13 Dec 2021 00:07:35 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/posts/mysql_commands/</guid>
+      <description>Enter MySQL prompt as root user sudo mysql -u root -p Show Users and Databases show databases; select host, user, password from mysql.user; User Commands # To create a new MySQL user account, run the following command: CREATE USER &amp;#39;newuser&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;user_password&amp;#39;; # To grant access from another host, change the hostname part (localhost) with the remote machine IP. # For example, to grant access from a machine with IP 10.</description>
+    </item>
+    
+    <item>
+      <title>Programming Resources</title>
+      <link>https://mytechkb.com/posts/programming_resources/</link>
+      <pubDate>Sun, 12 Dec 2021 23:58:22 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/posts/programming_resources/</guid>
+      <description>General Programming  Reddit r/learnprogramming FAQ Reddit r/dailyprogrammer Coding Challenges Hit a Wall article Twelve Factor App Simple Programmer Clever Programmer Geek for Geeks  Find Starter Projects:  First Timers Only Up For Grabs Good First Issues com Good First Issue dev  Python Resources:  PyDon&amp;rsquo;ts Python Style Guide Zen of Python Hitchhikers Guide to Python Full Stack Python Flask Microblogging Tutorial  HTML/CSS/JavaScript Resources:  CodePen - build &amp;amp; test MDN Web Docs Char Reference Color Picker CSS Font Stack Coolors - Trending Colors Specificity Calculator Easing Functions Unsplash - Free Photos Google Fonts CSS Reset Bootstrap Docs  </description>
+    </item>
+    
+    <item>
+      <title>General Proxmox Commands</title>
+      <link>https://mytechkb.com/posts/general_proxmox_commands/</link>
+      <pubDate>Sun, 12 Dec 2021 23:48:53 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/posts/general_proxmox_commands/</guid>
+      <description>Unlock locked VM qm unlock 100 # or pct unlock 100 # for CT </description>
+    </item>
+    
+    <item>
+      <title>Remove Snap from Ubuntu</title>
+      <link>https://mytechkb.com/posts/remove_snap_from_ubuntu/</link>
+      <pubDate>Sun, 12 Dec 2021 23:45:45 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/posts/remove_snap_from_ubuntu/</guid>
+      <description>Remove snap from ubuntu snap list sudo snap remove &amp;lt;package_name&amp;gt; #(remove snapd last) sudo umount /snap/core/xxxx sudo umount /var/snap sudo apt purge snapd sudo apt autoremove </description>
+    </item>
+    
+    <item>
+      <title>Proxmox Expand HD Space</title>
+      <link>https://mytechkb.com/posts/proxmox_expand_hd/</link>
+      <pubDate>Sun, 12 Dec 2021 23:40:44 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/posts/proxmox_expand_hd/</guid>
+      <description>Expand HD space in Proxmox VM lsblk sudo fdisk -l /dev/sda sudo parted /dev/sda - print - F (fix) - resizepart 3 100% - quit sudo fdisk -l /dev/sda sudo pvresize /dev/sda3 sudo lvextend ubuntu-vg/ubuntu-lv -l+100%FREE sudo resize2fs /dev/ubuntu-vg/ubuntu-lv sudo reboot </description>
+    </item>
+    
+    <item>
+      <title>NodeJS Environment</title>
+      <link>https://mytechkb.com/posts/nodejs_environment/</link>
+      <pubDate>Sun, 12 Dec 2021 23:30:21 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/posts/nodejs_environment/</guid>
+      <description>To create a new package.json npm init -y To install a package npm i &amp;lt;package-name&amp;gt; sudo npm i -g nodemon To install a local package.json npm install To run node file node app.js To use nodemon to auto-restart server nodemon app.js </description>
+    </item>
+    
+    <item>
+      <title>Python Environment</title>
+      <link>https://mytechkb.com/posts/python_environment/</link>
+      <pubDate>Sun, 12 Dec 2021 23:22:14 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/posts/python_environment/</guid>
+      <description>Create and start Python Virtual Environment python3 -m venv venv source venv/bin/activate To install a local requirements.txt venv/bin/pip install -r requirements.txt venv/bin/pip install gunicorn To Exit Venv deactivate To create requirements.txt pip freeze &amp;gt; requirements.txt To remove installed plugins pip freeze | xargs pip uninstall -y To run flask app flask app.py </description>
+    </item>
+    
+    <item>
+      <title>Hugo Commands</title>
+      <link>https://mytechkb.com/posts/hugo_commands/</link>
+      <pubDate>Sun, 12 Dec 2021 21:58:14 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/posts/hugo_commands/</guid>
+      <description>Create a new site hugo new site quickstart Add a theme  Hugo Themes Don&amp;rsquo;t use the submodule method since that won&amp;rsquo;t allow you to customize the theme. Instead, download the zip file and extract into the themes directory.  cd quickstart git init git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke Add some content hugo new posts/my-first-post.md Start the Hugo Server hugo server -D Site Configuration Open up config.toml in a text editor</description>
+    </item>
+    
+  </channel>
+</rss>

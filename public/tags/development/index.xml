@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on MyTechKB</title>
+    <link>https://mytechkb.com/tags/development/</link>
+    <description>Recent content in Development on MyTechKB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Jan 2022 23:47:03 -0600</lastBuildDate><atom:link href="https://mytechkb.com/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust Environment</title>
+      <link>https://mytechkb.com/post/rust_environment/</link>
+      <pubDate>Sun, 02 Jan 2022 23:47:03 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/rust_environment/</guid>
+      <description>Install Rust curl --proto &amp;#39;=https&amp;#39; --tlsv1.2 -sSf https://sh.rustup.rs | sh Update Rust rustup update Cargo commands cargo build # build your project cargo run # run your project cargo test # test your project cargo doc # build documentation for your project cargo publish # publish a library to crates.io Create new project cargo new hello-rust # Creates a new dir called hello-rust hello-rust |- Cargo.toml |- src |- main.rs CI Steps cargo build cargo test # Run Tests cargo tarpaulin --ignore-tests # Code Coverage (install using &amp;#39;cargo install cargo-tarpaulin&amp;#39;) cargo clippy -- -D warnings # Linting (fail with warnings) cargo fmt -- --check # Format (fail with unformat) cargo audit # Security Audit </description>
+    </item>
+    
+    <item>
+      <title>Mysql Commands</title>
+      <link>https://mytechkb.com/post/mysql_commands/</link>
+      <pubDate>Mon, 13 Dec 2021 00:07:35 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/mysql_commands/</guid>
+      <description>Enter MySQL prompt as root user sudo mysql -u root -p Show Users and Databases show databases; select host, user, password from mysql.user; User Commands # To create a new MySQL user account, run the following command: CREATE USER &amp;#39;newuser&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;user_password&amp;#39;; # To grant access from another host, change the hostname part (localhost) with the remote machine IP. # For example, to grant access from a machine with IP 10.</description>
+    </item>
+    
+    <item>
+      <title>Programming Resources</title>
+      <link>https://mytechkb.com/post/programming_resources/</link>
+      <pubDate>Sun, 12 Dec 2021 23:58:22 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/programming_resources/</guid>
+      <description>General Programming  Reddit r/learnprogramming FAQ Reddit r/dailyprogrammer Coding Challenges Hit a Wall article Twelve Factor App Simple Programmer Clever Programmer Geek for Geeks  Find Starter Projects:  First Timers Only Up For Grabs Good First Issues com Good First Issue dev  Python Resources:  PyDon&amp;rsquo;ts Python Style Guide Zen of Python Hitchhikers Guide to Python Full Stack Python Flask Microblogging Tutorial  HTML/CSS/JavaScript Resources:  CodePen - build &amp;amp; test MDN Web Docs Char Reference Color Picker CSS Font Stack Coolors - Trending Colors Specificity Calculator Easing Functions Unsplash - Free Photos Google Fonts CSS Reset Bootstrap Docs  </description>
+    </item>
+    
+    <item>
+      <title>NodeJS Environment</title>
+      <link>https://mytechkb.com/post/nodejs_environment/</link>
+      <pubDate>Sun, 12 Dec 2021 23:30:21 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/nodejs_environment/</guid>
+      <description>To create a new package.json npm init -y To install a package npm i &amp;lt;package-name&amp;gt; sudo npm i -g nodemon To install a local package.json npm install To run node file node app.js To use nodemon to auto-restart server nodemon app.js </description>
+    </item>
+    
+    <item>
+      <title>Python Environment</title>
+      <link>https://mytechkb.com/post/python_environment/</link>
+      <pubDate>Sun, 12 Dec 2021 23:22:14 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/python_environment/</guid>
+      <description>Create and start Python Virtual Environment python3 -m venv venv source venv/bin/activate To install a local requirements.txt venv/bin/pip install -r requirements.txt venv/bin/pip install gunicorn To Exit Venv deactivate To create requirements.txt pip freeze &amp;gt; requirements.txt To remove installed plugins pip freeze | xargs pip uninstall -y To run flask app flask app.py </description>
+    </item>
+    
+  </channel>
+</rss>

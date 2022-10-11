@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NodeJS on MyTechKB</title>
+    <link>https://mytechkb.com/tags/nodejs/</link>
+    <description>Recent content in NodeJS on MyTechKB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Dec 2021 23:30:21 -0600</lastBuildDate><atom:link href="https://mytechkb.com/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NodeJS Environment</title>
+      <link>https://mytechkb.com/post/nodejs_environment/</link>
+      <pubDate>Sun, 12 Dec 2021 23:30:21 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/nodejs_environment/</guid>
+      <description>To create a new package.json npm init -y To install a package npm i &amp;lt;package-name&amp;gt; sudo npm i -g nodemon To install a local package.json npm install To run node file node app.js To use nodemon to auto-restart server nodemon app.js </description>
+    </item>
+    
+  </channel>
+</rss>

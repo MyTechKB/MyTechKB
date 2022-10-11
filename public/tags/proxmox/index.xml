@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Proxmox on MyTechKB</title>
+    <link>https://mytechkb.com/tags/proxmox/</link>
+    <description>Recent content in Proxmox on MyTechKB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Dec 2021 23:48:53 -0600</lastBuildDate><atom:link href="https://mytechkb.com/tags/proxmox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>General Proxmox Commands</title>
+      <link>https://mytechkb.com/post/general_proxmox_commands/</link>
+      <pubDate>Sun, 12 Dec 2021 23:48:53 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/general_proxmox_commands/</guid>
+      <description>Unlock locked VM qm unlock 100 # or pct unlock 100 # for CT </description>
+    </item>
+    
+    <item>
+      <title>Proxmox Expand HD Space</title>
+      <link>https://mytechkb.com/post/proxmox_expand_hd/</link>
+      <pubDate>Sun, 12 Dec 2021 23:40:44 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/proxmox_expand_hd/</guid>
+      <description>Expand HD space in Proxmox VM lsblk sudo fdisk -l /dev/sda sudo parted /dev/sda - print - F (fix) - resizepart 3 100% - quit sudo fdisk -l /dev/sda sudo pvresize /dev/sda3 sudo lvextend ubuntu-vg/ubuntu-lv -l+100%FREE sudo resize2fs /dev/ubuntu-vg/ubuntu-lv sudo reboot </description>
+    </item>
+    
+  </channel>
+</rss>

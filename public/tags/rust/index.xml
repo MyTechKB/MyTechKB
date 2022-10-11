@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rust on MyTechKB</title>
+    <link>https://mytechkb.com/tags/rust/</link>
+    <description>Recent content in Rust on MyTechKB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Jan 2022 23:47:03 -0600</lastBuildDate><atom:link href="https://mytechkb.com/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rust Environment</title>
+      <link>https://mytechkb.com/post/rust_environment/</link>
+      <pubDate>Sun, 02 Jan 2022 23:47:03 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/rust_environment/</guid>
+      <description>Install Rust curl --proto &amp;#39;=https&amp;#39; --tlsv1.2 -sSf https://sh.rustup.rs | sh Update Rust rustup update Cargo commands cargo build # build your project cargo run # run your project cargo test # test your project cargo doc # build documentation for your project cargo publish # publish a library to crates.io Create new project cargo new hello-rust # Creates a new dir called hello-rust hello-rust |- Cargo.toml |- src |- main.rs CI Steps cargo build cargo test # Run Tests cargo tarpaulin --ignore-tests # Code Coverage (install using &amp;#39;cargo install cargo-tarpaulin&amp;#39;) cargo clippy -- -D warnings # Linting (fail with warnings) cargo fmt -- --check # Format (fail with unformat) cargo audit # Security Audit </description>
+    </item>
+    
+  </channel>
+</rss>
