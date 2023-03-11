@@ -22,6 +22,10 @@ sudo deluser --remove-home [username]
 ## Install ZeroTier:
 curl -s https://install.zerotier.com | sudo bash
 sudo zerotier-cli join [network_id] # Then approve on website
+### get new ZT address
+sudo systemctl stop zerotier-one
+sudo rm /var/lib/zerotier-one/identity.public /var/lib/zerotier-one/identity.secret
+sudo systemctl start zerotier-one
 
 ## Install docker
 sudo usermod -aG docker [username]
@@ -31,3 +35,8 @@ git config --global user.name "Your Name"
 git config --global user.email "youremail@yourdomain.com"
 git config --global credential.helper store
 
+## Oracle open ports
+sudo iptables -I INPUT -j ACCEPT  # if works, do following
+sudo su
+iptables-save > /etc/iptables/rules.v4
+exit
