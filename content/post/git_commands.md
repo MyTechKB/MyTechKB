@@ -18,6 +18,32 @@ git config --global user.email "youremail@yourdomain.com"
 git config --global credential.helper store
 {{< / highlight >}}
 
+## Git commands
+{{< highlight bash >}}
+# Clone repositories
+git clone https://www.github.com/username/repository.git {optional dir name}
+# To create a new branch
+cd repository
+git checkout -b feature_x
+# Check status vs main
+git status
+# Push changes
+git add .
+git commit -m "message"
+git push
+# Or for new branch
+git push origin feature_x
+# Rebase branch with main
+git rebase main
+# Merge branch with main
+git checkout master
+git merge feature_x --no-ff
+# Delete branch
+git branch -d feature_x
+# Tag new merge
+git tag -a v1.3.0 -m "message"
+{{< / highlight >}}
+
 ## Check if repo is ahead or behind
 {{< highlight bash >}}
 git fetch
