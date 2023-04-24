@@ -9,7 +9,10 @@ tags:
 
 ## Unlock locked VM
 {{< highlight bash >}}
-qm unlock 100
+qm unlock <LXC_NUMBER>
 # or
-pct unlock 100 # for CT
+pct unlock <LXC_NUMBER> # for CT
 {{< / highlight >}}
+
+## Descend into LXC from PVE
+lxc-attach --name <LXC_NUMBER>
