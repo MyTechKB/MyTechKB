@@ -9,7 +9,7 @@ tags:
 
 ## Unlock locked VM
 {{< highlight bash >}}
-qm unlock <LXC_NUMBER>
+qm unlock <VM_NUMBER>
 # or
 pct unlock <LXC_NUMBER> # for CT
 {{< / highlight >}}
