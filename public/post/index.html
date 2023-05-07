@@ -206,7 +206,7 @@
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Start and stop all containers # Stop all containers docker stop $(docker ps -a -q) # Start all containers docker start $(docker ps -a -q) Create a Docker Swarm docker swarm init # Will give you join command which includes token and ip_address:port docker swarm join --token [token] [ip_address]:[port] # To get a join command for a worker docker swarm join-token worker # To get a join command for a manager docker swarm join-token manager # Check swarm with docker node ls 
+      Start and stop all containers # Stop all containers docker stop $(docker ps -a -q) # Start all containers docker start $(docker ps -a -q) Remote docker access You can configure Docker to accept remote connections. This can be done using the docker.service systemd unit file for Linux distributions using systemd. Or you can use the daemon.json file, if your distribution doesn’t use systemd. Configuring Docker to listen for connections using both the systemd unit file and the daemon.
     </div>
   </div>
 
@@ -246,7 +246,7 @@
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Initialize global user git config --global user.name &#34;Your Name&#34; git config --global user.email &#34;youremail@yourdomain.com&#34; Credentials stored with in ~/.git-credentials file git config --global credential.helper store Check if repo is ahead or behind git fetch # Following command lists &#34;{local} {remote}&#34; git for-each-ref --format=&#34;%(refname:short) %(upstream:short)&#34; refs/heads # Run next command with the output of the previous command git rev-list --left-right {local}...{remote} # IF output contains &#39;&lt;&#39;, then local is ahead - perform push # If output contains &#39;&gt;&#39;, then remote is ahead - perform pull Clone submodule git submodule init git submodule update Remove submodule # Remove the submodule entry from .
+      Initialize global user git config --global user.name &#34;Your Name&#34; git config --global user.email &#34;youremail@yourdomain.com&#34; Credentials stored with in ~/.git-credentials file git config --global credential.helper store Git commands # Clone repositories git clone https://www.github.com/username/repository.git {optional dir name} # To create a new branch cd repository git checkout -b feature_x # Check status vs main git status # Push changes git add . git commit -m &#34;message&#34; git push # Or for new branch git push origin feature_x # Rebase branch with main git rebase main # Merge branch with main git checkout master git merge feature_x --no-ff # Delete branch git branch -d feature_x # Tag new merge git tag -a v1.
     </div>
   </div>
 
@@ -308,10 +308,13 @@
         <a href="/post/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
       </li>
       <li class="page-item">
+        <a href="/post/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
+      </li>
+      <li class="page-item">
         <a href="/post/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
       </li>
       <li class="page-item">
-        <a href="/post/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/post/page/3/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
   </article>
@@ -320,7 +323,7 @@
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mytechkb.com/" >
-    &copy;  MyTechKB 2022 
+    &copy;  MyTechKB 2023 
   </a>
     <div>
 <div class="ananke-socials">

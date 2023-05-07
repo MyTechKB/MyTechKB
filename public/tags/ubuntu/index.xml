@@ -6,7 +6,21 @@
     <description>Recent content in Ubuntu on MyTechKB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Dec 2021 23:45:45 -0600</lastBuildDate><atom:link href="https://mytechkb.com/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Dec 2021 00:43:09 -0600</lastBuildDate><atom:link href="https://mytechkb.com/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fresh Ubuntu Install</title>
+      <link>https://mytechkb.com/post/fresh_ubuntu_install/</link>
+      <pubDate>Mon, 13 Dec 2021 00:43:09 -0600</pubDate>
+      
+      <guid>https://mytechkb.com/post/fresh_ubuntu_install/</guid>
+      <description>Add new user: sudo adduser [username] -&amp;gt; promtped for password and info
+Add user to sudo group: sudo usermod -aG sudo [username]
+Remove user and home directory: sudo deluser &amp;ndash;remove-home [username]
+Install ZeroTier: curl -s https://install.zerotier.com | sudo bash sudo zerotier-cli join [network_id] # Then approve on website
+get new ZT address sudo systemctl stop zerotier-one sudo rm /var/lib/zerotier-one/identity.public /var/lib/zerotier-one/identity.secret sudo systemctl start zerotier-one
+Install docker sudo usermod -aG docker [username]</description>
+    </item>
+    
     <item>
       <title>Remove Snap from Ubuntu</title>
       <link>https://mytechkb.com/post/remove_snap_from_ubuntu/</link>

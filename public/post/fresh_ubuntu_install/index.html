@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Fresh Ubuntu Install | MyTechKB</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Add new user: sudo adduser [username] -&gt; promtped for password and info
+Add user to sudo group: sudo usermod -aG sudo [username]
+Remove user and home directory: sudo deluser &ndash;remove-home [username]
+Install ZeroTier: curl -s https://install.zerotier.com | sudo bash sudo zerotier-cli join [network_id] # Then approve on website
+get new ZT address sudo systemctl stop zerotier-one sudo rm /var/lib/zerotier-one/identity.public /var/lib/zerotier-one/identity.secret sudo systemctl start zerotier-one
+Install docker sudo usermod -aG docker [username]">
+    <meta name="generator" content="Hugo 0.92.2" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Fresh Ubuntu Install" />
+<meta property="og:description" content="Add new user: sudo adduser [username] -&gt; promtped for password and info
+Add user to sudo group: sudo usermod -aG sudo [username]
+Remove user and home directory: sudo deluser &ndash;remove-home [username]
+Install ZeroTier: curl -s https://install.zerotier.com | sudo bash sudo zerotier-cli join [network_id] # Then approve on website
+get new ZT address sudo systemctl stop zerotier-one sudo rm /var/lib/zerotier-one/identity.public /var/lib/zerotier-one/identity.secret sudo systemctl start zerotier-one
+Install docker sudo usermod -aG docker [username]" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mytechkb.com/post/fresh_ubuntu_install/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-12-13T00:43:09-06:00" />
+<meta property="article:modified_time" content="2021-12-13T00:43:09-06:00" />
+
+<meta itemprop="name" content="Fresh Ubuntu Install">
+<meta itemprop="description" content="Add new user: sudo adduser [username] -&gt; promtped for password and info
+Add user to sudo group: sudo usermod -aG sudo [username]
+Remove user and home directory: sudo deluser &ndash;remove-home [username]
+Install ZeroTier: curl -s https://install.zerotier.com | sudo bash sudo zerotier-cli join [network_id] # Then approve on website
+get new ZT address sudo systemctl stop zerotier-one sudo rm /var/lib/zerotier-one/identity.public /var/lib/zerotier-one/identity.secret sudo systemctl start zerotier-one
+Install docker sudo usermod -aG docker [username]"><meta itemprop="datePublished" content="2021-12-13T00:43:09-06:00" />
+<meta itemprop="dateModified" content="2021-12-13T00:43:09-06:00" />
+<meta itemprop="wordCount" content="110">
+<meta itemprop="keywords" content="Ubuntu," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Fresh Ubuntu Install"/>
+<meta name="twitter:description" content="Add new user: sudo adduser [username] -&gt; promtped for password and info
+Add user to sudo group: sudo usermod -aG sudo [username]
+Remove user and home directory: sudo deluser &ndash;remove-home [username]
+Install ZeroTier: curl -s https://install.zerotier.com | sudo bash sudo zerotier-cli join [network_id] # Then approve on website
+get new ZT address sudo systemctl stop zerotier-one sudo rm /var/lib/zerotier-one/identity.public /var/lib/zerotier-one/identity.secret sudo systemctl start zerotier-one
+Install docker sudo usermod -aG docker [username]"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        MyTechKB
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/contact/" title="Contact page">
+              Contact
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/post/" title="Posts page">
+              Posts
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+</div>
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Fresh Ubuntu Install</h1>
+      
+      <p class="tracked">
+          By <strong>
+          
+              Brian Ladner
+          
+          </strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2021-12-13T00:43:09-06:00">December 13, 2021</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h2 id="add-new-user">Add new user:</h2>
+<p>sudo adduser [username]
+-&gt; promtped for password and info</p>
+<h2 id="add-user-to-sudo-group">Add user to sudo group:</h2>
+<p>sudo usermod -aG sudo [username]</p>
+<h2 id="remove-user-and-home-directory">Remove user and home directory:</h2>
+<p>sudo deluser &ndash;remove-home [username]</p>
+<h2 id="install-zerotier">Install ZeroTier:</h2>
+<p>curl -s <a href="https://install.zerotier.com">https://install.zerotier.com</a> | sudo bash
+sudo zerotier-cli join [network_id] # Then approve on website</p>
+<h3 id="get-new-zt-address">get new ZT address</h3>
+<p>sudo systemctl stop zerotier-one
+sudo rm /var/lib/zerotier-one/identity.public /var/lib/zerotier-one/identity.secret
+sudo systemctl start zerotier-one</p>
+<h2 id="install-docker">Install docker</h2>
+<p>sudo usermod -aG docker [username]</p>
+<h2 id="set-up-git">Set up git</h2>
+<p>git config &ndash;global user.name &ldquo;Your Name&rdquo;
+git config &ndash;global user.email &ldquo;<a href="mailto:youremail@yourdomain.com">youremail@yourdomain.com</a>&rdquo;
+git config &ndash;global credential.helper store</p>
+<h2 id="oracle-open-ports">Oracle open ports</h2>
+<p>sudo iptables -I INPUT -j ACCEPT  # if works, do following
+sudo su
+iptables-save &gt; /etc/iptables/rules.v4
+exit</p>
+<ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/ubuntu" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">Ubuntu</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/post/remove_snap_from_ubuntu/">Remove Snap from Ubuntu</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mytechkb.com/" >
+    &copy;  MyTechKB 2023 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div></div>
+  </div>
+</footer>
+
+  </body>
+</html>

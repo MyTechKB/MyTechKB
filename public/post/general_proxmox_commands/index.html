@@ -6,7 +6,7 @@
     
     <title>General Proxmox Commands | MyTechKB</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Unlock locked VM qm unlock 100 # or pct unlock 100 # for CT ">
+    <meta name="description" content="Unlock locked VM qm unlock &lt;VM_NUMBER&gt; # or pct unlock &lt;LXC_NUMBER&gt; # for CT Descend into LXC from PVE lxc-attach &ndash;name &lt;LXC_NUMBER&gt;">
     <meta name="generator" content="Hugo 0.92.2" />
     
     
@@ -27,19 +27,19 @@
     
     
     <meta property="og:title" content="General Proxmox Commands" />
-<meta property="og:description" content="Unlock locked VM qm unlock 100 # or pct unlock 100 # for CT " />
+<meta property="og:description" content="Unlock locked VM qm unlock &lt;VM_NUMBER&gt; # or pct unlock &lt;LXC_NUMBER&gt; # for CT Descend into LXC from PVE lxc-attach &ndash;name &lt;LXC_NUMBER&gt;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://mytechkb.com/post/general_proxmox_commands/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-12-12T23:48:53-06:00" />
 <meta property="article:modified_time" content="2021-12-12T23:48:53-06:00" />
 
 <meta itemprop="name" content="General Proxmox Commands">
-<meta itemprop="description" content="Unlock locked VM qm unlock 100 # or pct unlock 100 # for CT "><meta itemprop="datePublished" content="2021-12-12T23:48:53-06:00" />
+<meta itemprop="description" content="Unlock locked VM qm unlock &lt;VM_NUMBER&gt; # or pct unlock &lt;LXC_NUMBER&gt; # for CT Descend into LXC from PVE lxc-attach &ndash;name &lt;LXC_NUMBER&gt;"><meta itemprop="datePublished" content="2021-12-12T23:48:53-06:00" />
 <meta itemprop="dateModified" content="2021-12-12T23:48:53-06:00" />
-<meta itemprop="wordCount" content="14">
+<meta itemprop="wordCount" content="22">
 <meta itemprop="keywords" content="Proxmox," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="General Proxmox Commands"/>
-<meta name="twitter:description" content="Unlock locked VM qm unlock 100 # or pct unlock 100 # for CT "/>
+<meta name="twitter:description" content="Unlock locked VM qm unlock &lt;VM_NUMBER&gt; # or pct unlock &lt;LXC_NUMBER&gt; # for CT Descend into LXC from PVE lxc-attach &ndash;name &lt;LXC_NUMBER&gt;"/>
 
 	
   </head>
@@ -136,9 +136,11 @@
       
     </header>
     <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h2 id="unlock-locked-vm">Unlock locked VM</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">qm unlock <span style="color:#ae81ff">100</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">qm unlock &lt;VM_NUMBER&gt;
 <span style="color:#75715e"># or</span>
-pct unlock <span style="color:#ae81ff">100</span> <span style="color:#75715e"># for CT</span></code></pre></div>
+pct unlock &lt;LXC_NUMBER&gt; <span style="color:#75715e"># for CT</span></code></pre></div>
+<h2 id="descend-into-lxc-from-pve">Descend into LXC from PVE</h2>
+<p>lxc-attach &ndash;name &lt;LXC_NUMBER&gt;</p>
 <ul class="pa0">
   
    <li class="list">
@@ -176,7 +178,7 @@ pct unlock <span style="color:#ae81ff">100</span> <span style="color:#75715e"># 
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mytechkb.com/" >
-    &copy;  MyTechKB 2022 
+    &copy;  MyTechKB 2023 
   </a>
     <div>
 <div class="ananke-socials">

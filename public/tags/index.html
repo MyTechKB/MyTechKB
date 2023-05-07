@@ -287,7 +287,7 @@ Linux - Solution 1: chmod -R 755 will set this as permissions to all files and f
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Start and stop all containers # Stop all containers docker stop $(docker ps -a -q) # Start all containers docker start $(docker ps -a -q) Create a Docker Swarm docker swarm init # Will give you join command which includes token and ip_address:port docker swarm join --token [token] [ip_address]:[port] # To get a join command for a worker docker swarm join-token worker # To get a join command for a manager docker swarm join-token manager # Check swarm with docker node ls 
+      Start and stop all containers # Stop all containers docker stop $(docker ps -a -q) # Start all containers docker start $(docker ps -a -q) Remote docker access You can configure Docker to accept remote connections. This can be done using the docker.service systemd unit file for Linux distributions using systemd. Or you can use the daemon.json file, if your distribution doesn’t use systemd. Configuring Docker to listen for connections using both the systemd unit file and the daemon.
     </div>
   </div>
 </div>
@@ -309,7 +309,7 @@ Linux - Solution 1: chmod -R 755 will set this as permissions to all files and f
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Initialize global user git config --global user.name &#34;Your Name&#34; git config --global user.email &#34;youremail@yourdomain.com&#34; Credentials stored with in ~/.git-credentials file git config --global credential.helper store Check if repo is ahead or behind git fetch # Following command lists &#34;{local} {remote}&#34; git for-each-ref --format=&#34;%(refname:short) %(upstream:short)&#34; refs/heads # Run next command with the output of the previous command git rev-list --left-right {local}...{remote} # IF output contains &#39;&lt;&#39;, then local is ahead - perform push # If output contains &#39;&gt;&#39;, then remote is ahead - perform pull Clone submodule git submodule init git submodule update Remove submodule # Remove the submodule entry from .
+      Initialize global user git config --global user.name &#34;Your Name&#34; git config --global user.email &#34;youremail@yourdomain.com&#34; Credentials stored with in ~/.git-credentials file git config --global credential.helper store Git commands # Clone repositories git clone https://www.github.com/username/repository.git {optional dir name} # To create a new branch cd repository git checkout -b feature_x # Check status vs main git status # Push changes git add . git commit -m &#34;message&#34; git push # Or for new branch git push origin feature_x # Rebase branch with main git rebase main # Merge branch with main git checkout master git merge feature_x --no-ff # Delete branch git branch -d feature_x # Tag new merge git tag -a v1.
     </div>
   </div>
 </div>
@@ -537,7 +537,7 @@ Linux - Solution 1: chmod -R 755 will set this as permissions to all files and f
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Unlock locked VM qm unlock 100 # or pct unlock 100 # for CT 
+      Unlock locked VM qm unlock &lt;VM_NUMBER&gt; # or pct unlock &lt;LXC_NUMBER&gt; # for CT Descend into LXC from PVE lxc-attach &ndash;name &lt;LXC_NUMBER&gt;
     </div>
   </div>
 </div>
@@ -743,6 +743,26 @@ Linux - Solution 1: chmod -R 755 will set this as permissions to all files and f
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Post</span>
     <h1 class="f3 near-black">
+      <a href="/post/fresh_ubuntu_install/" class="link black dim">
+        Fresh Ubuntu Install
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Add new user: sudo adduser [username] -&gt; promtped for password and info
+Add user to sudo group: sudo usermod -aG sudo [username]
+Remove user and home directory: sudo deluser &ndash;remove-home [username]
+Install ZeroTier: curl -s https://install.zerotier.com | sudo bash sudo zerotier-cli join [network_id] # Then approve on website
+get new ZT address sudo systemctl stop zerotier-one sudo rm /var/lib/zerotier-one/identity.public /var/lib/zerotier-one/identity.secret sudo systemctl start zerotier-one
+Install docker sudo usermod -aG docker [username]
+    </div>
+  </div>
+</div>
+
+        
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Post</span>
+    <h1 class="f3 near-black">
       <a href="/post/remove_snap_from_ubuntu/" class="link black dim">
         Remove Snap from Ubuntu
       </a>
@@ -828,7 +848,7 @@ Linux - Solution 1: chmod -R 755 will set this as permissions to all files and f
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mytechkb.com/" >
-    &copy;  MyTechKB 2022 
+    &copy;  MyTechKB 2023 
   </a>
     <div>
 <div class="ananke-socials">

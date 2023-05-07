@@ -115,6 +115,31 @@
       </div>
     
     <h1 class="f3 near-black">
+      <a href="/post/fresh_ubuntu_install/" class="link black dim">
+        Fresh Ubuntu Install
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Add new user: sudo adduser [username] -&gt; promtped for password and info
+Add user to sudo group: sudo usermod -aG sudo [username]
+Remove user and home directory: sudo deluser &ndash;remove-home [username]
+Install ZeroTier: curl -s https://install.zerotier.com | sudo bash sudo zerotier-cli join [network_id] # Then approve on website
+get new ZT address sudo systemctl stop zerotier-one sudo rm /var/lib/zerotier-one/identity.public /var/lib/zerotier-one/identity.secret sudo systemctl start zerotier-one
+Install docker sudo usermod -aG docker [username]
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        December 13, 2021
+      </div>
+    
+    <h1 class="f3 near-black">
       <a href="/post/chmod_hierarchy/" class="link black dim">
         chmod Hierarchy
       </a>
@@ -181,7 +206,7 @@ Linux - Solution 1: chmod -R 755 will set this as permissions to all files and f
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Unlock locked VM qm unlock 100 # or pct unlock 100 # for CT 
+      Unlock locked VM qm unlock &lt;VM_NUMBER&gt; # or pct unlock &lt;LXC_NUMBER&gt; # for CT Descend into LXC from PVE lxc-attach &ndash;name &lt;LXC_NUMBER&gt;
     </div>
   </div>
 
@@ -267,26 +292,6 @@ Linux - Solution 1: chmod -R 755 will set this as permissions to all files and f
 
         </div>
       
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          
-            <div class="mb3 pa4 mid-gray overflow-hidden">
-    
-      <div class="f6">
-        December 12, 2021
-      </div>
-    
-    <h1 class="f3 near-black">
-      <a href="/post/hugo_commands/" class="link black dim">
-        Hugo Commands
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Create a new site hugo new site quickstart Add a theme  Hugo Themes Don&rsquo;t use the submodule method since that won&rsquo;t allow you to customize the theme. Instead, download the zip file and extract into the themes directory.  cd quickstart git init git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke Add some content hugo new post/my-first-post.md Start the Hugo Server hugo server -D Site Configuration Open up config.toml in a text editor
-    </div>
-  </div>
-
-        </div>
-      
     </aside>
     
     <ul class="pagination pagination-default">
@@ -302,11 +307,14 @@ Linux - Solution 1: chmod -R 755 will set this as permissions to all files and f
       <li class="page-item active">
         <a aria-current="page" aria-label="Page 2" class="page-link" role="button">2</a>
       </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
+      <li class="page-item">
+        <a href="/post/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
       </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      <li class="page-item">
+        <a href="/post/page/3/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/post/page/3/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
   </article>
@@ -315,7 +323,7 @@ Linux - Solution 1: chmod -R 755 will set this as permissions to all files and f
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mytechkb.com/" >
-    &copy;  MyTechKB 2022 
+    &copy;  MyTechKB 2023 
   </a>
     <div>
 <div class="ananke-socials">

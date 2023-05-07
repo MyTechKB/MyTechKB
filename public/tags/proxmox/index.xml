@@ -13,7 +13,7 @@
       <pubDate>Sun, 12 Dec 2021 23:48:53 -0600</pubDate>
       
       <guid>https://mytechkb.com/post/general_proxmox_commands/</guid>
-      <description>Unlock locked VM qm unlock 100 # or pct unlock 100 # for CT </description>
+      <description>Unlock locked VM qm unlock &amp;lt;VM_NUMBER&amp;gt; # or pct unlock &amp;lt;LXC_NUMBER&amp;gt; # for CT Descend into LXC from PVE lxc-attach &amp;ndash;name &amp;lt;LXC_NUMBER&amp;gt;</description>
     </item>
     
     <item>

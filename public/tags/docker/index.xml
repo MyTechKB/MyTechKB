@@ -13,7 +13,7 @@
       <pubDate>Wed, 19 Jan 2022 22:22:53 -0600</pubDate>
       
       <guid>https://mytechkb.com/post/docker_commands/</guid>
-      <description>Start and stop all containers # Stop all containers docker stop $(docker ps -a -q) # Start all containers docker start $(docker ps -a -q) Create a Docker Swarm docker swarm init # Will give you join command which includes token and ip_address:port docker swarm join --token [token] [ip_address]:[port] # To get a join command for a worker docker swarm join-token worker # To get a join command for a manager docker swarm join-token manager # Check swarm with docker node ls </description>
+      <description>Start and stop all containers # Stop all containers docker stop $(docker ps -a -q) # Start all containers docker start $(docker ps -a -q) Remote docker access You can configure Docker to accept remote connections. This can be done using the docker.service systemd unit file for Linux distributions using systemd. Or you can use the daemon.json file, if your distribution doesn’t use systemd. Configuring Docker to listen for connections using both the systemd unit file and the daemon.</description>
     </item>
     
   </channel>

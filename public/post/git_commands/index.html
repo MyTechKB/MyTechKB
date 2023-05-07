@@ -6,7 +6,7 @@
     
     <title>Git Commands | MyTechKB</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Initialize global user git config --global user.name &#34;Your Name&#34; git config --global user.email &#34;youremail@yourdomain.com&#34; Credentials stored with in ~/.git-credentials file git config --global credential.helper store Check if repo is ahead or behind git fetch # Following command lists &#34;{local} {remote}&#34; git for-each-ref --format=&#34;%(refname:short) %(upstream:short)&#34; refs/heads # Run next command with the output of the previous command git rev-list --left-right {local}...{remote} # IF output contains &#39;&lt;&#39;, then local is ahead - perform push # If output contains &#39;&gt;&#39;, then remote is ahead - perform pull Clone submodule git submodule init git submodule update Remove submodule # Remove the submodule entry from .">
+    <meta name="description" content="Initialize global user git config --global user.name &#34;Your Name&#34; git config --global user.email &#34;youremail@yourdomain.com&#34; Credentials stored with in ~/.git-credentials file git config --global credential.helper store Git commands # Clone repositories git clone https://www.github.com/username/repository.git {optional dir name} # To create a new branch cd repository git checkout -b feature_x # Check status vs main git status # Push changes git add . git commit -m &#34;message&#34; git push # Or for new branch git push origin feature_x # Rebase branch with main git rebase main # Merge branch with main git checkout master git merge feature_x --no-ff # Delete branch git branch -d feature_x # Tag new merge git tag -a v1.">
     <meta name="generator" content="Hugo 0.92.2" />
     
     
@@ -27,19 +27,19 @@
     
     
     <meta property="og:title" content="Git Commands" />
-<meta property="og:description" content="Initialize global user git config --global user.name &#34;Your Name&#34; git config --global user.email &#34;youremail@yourdomain.com&#34; Credentials stored with in ~/.git-credentials file git config --global credential.helper store Check if repo is ahead or behind git fetch # Following command lists &#34;{local} {remote}&#34; git for-each-ref --format=&#34;%(refname:short) %(upstream:short)&#34; refs/heads # Run next command with the output of the previous command git rev-list --left-right {local}...{remote} # IF output contains &#39;&lt;&#39;, then local is ahead - perform push # If output contains &#39;&gt;&#39;, then remote is ahead - perform pull Clone submodule git submodule init git submodule update Remove submodule # Remove the submodule entry from ." />
+<meta property="og:description" content="Initialize global user git config --global user.name &#34;Your Name&#34; git config --global user.email &#34;youremail@yourdomain.com&#34; Credentials stored with in ~/.git-credentials file git config --global credential.helper store Git commands # Clone repositories git clone https://www.github.com/username/repository.git {optional dir name} # To create a new branch cd repository git checkout -b feature_x # Check status vs main git status # Push changes git add . git commit -m &#34;message&#34; git push # Or for new branch git push origin feature_x # Rebase branch with main git rebase main # Merge branch with main git checkout master git merge feature_x --no-ff # Delete branch git branch -d feature_x # Tag new merge git tag -a v1." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://mytechkb.com/post/git_commands/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-12-14T21:23:08-06:00" />
 <meta property="article:modified_time" content="2021-12-14T21:23:08-06:00" />
 
 <meta itemprop="name" content="Git Commands">
-<meta itemprop="description" content="Initialize global user git config --global user.name &#34;Your Name&#34; git config --global user.email &#34;youremail@yourdomain.com&#34; Credentials stored with in ~/.git-credentials file git config --global credential.helper store Check if repo is ahead or behind git fetch # Following command lists &#34;{local} {remote}&#34; git for-each-ref --format=&#34;%(refname:short) %(upstream:short)&#34; refs/heads # Run next command with the output of the previous command git rev-list --left-right {local}...{remote} # IF output contains &#39;&lt;&#39;, then local is ahead - perform push # If output contains &#39;&gt;&#39;, then remote is ahead - perform pull Clone submodule git submodule init git submodule update Remove submodule # Remove the submodule entry from ."><meta itemprop="datePublished" content="2021-12-14T21:23:08-06:00" />
+<meta itemprop="description" content="Initialize global user git config --global user.name &#34;Your Name&#34; git config --global user.email &#34;youremail@yourdomain.com&#34; Credentials stored with in ~/.git-credentials file git config --global credential.helper store Git commands # Clone repositories git clone https://www.github.com/username/repository.git {optional dir name} # To create a new branch cd repository git checkout -b feature_x # Check status vs main git status # Push changes git add . git commit -m &#34;message&#34; git push # Or for new branch git push origin feature_x # Rebase branch with main git rebase main # Merge branch with main git checkout master git merge feature_x --no-ff # Delete branch git branch -d feature_x # Tag new merge git tag -a v1."><meta itemprop="datePublished" content="2021-12-14T21:23:08-06:00" />
 <meta itemprop="dateModified" content="2021-12-14T21:23:08-06:00" />
-<meta itemprop="wordCount" content="137">
+<meta itemprop="wordCount" content="225">
 <meta itemprop="keywords" content="Git," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Git Commands"/>
-<meta name="twitter:description" content="Initialize global user git config --global user.name &#34;Your Name&#34; git config --global user.email &#34;youremail@yourdomain.com&#34; Credentials stored with in ~/.git-credentials file git config --global credential.helper store Check if repo is ahead or behind git fetch # Following command lists &#34;{local} {remote}&#34; git for-each-ref --format=&#34;%(refname:short) %(upstream:short)&#34; refs/heads # Run next command with the output of the previous command git rev-list --left-right {local}...{remote} # IF output contains &#39;&lt;&#39;, then local is ahead - perform push # If output contains &#39;&gt;&#39;, then remote is ahead - perform pull Clone submodule git submodule init git submodule update Remove submodule # Remove the submodule entry from ."/>
+<meta name="twitter:description" content="Initialize global user git config --global user.name &#34;Your Name&#34; git config --global user.email &#34;youremail@yourdomain.com&#34; Credentials stored with in ~/.git-credentials file git config --global credential.helper store Git commands # Clone repositories git clone https://www.github.com/username/repository.git {optional dir name} # To create a new branch cd repository git checkout -b feature_x # Check status vs main git status # Push changes git add . git commit -m &#34;message&#34; git push # Or for new branch git push origin feature_x # Rebase branch with main git rebase main # Merge branch with main git checkout master git merge feature_x --no-ff # Delete branch git branch -d feature_x # Tag new merge git tag -a v1."/>
 
 	
   </head>
@@ -140,6 +140,29 @@
 git config --global user.email <span style="color:#e6db74">&#34;youremail@yourdomain.com&#34;</span></code></pre></div>
 <h2 id="credentials-stored-with-in-git-credentials-file">Credentials stored with in ~/.git-credentials file</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git config --global credential.helper store</code></pre></div>
+<h2 id="git-commands">Git commands</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Clone repositories</span>
+git clone https://www.github.com/username/repository.git <span style="color:#f92672">{</span>optional dir name<span style="color:#f92672">}</span>
+<span style="color:#75715e"># To create a new branch</span>
+cd repository
+git checkout -b feature_x
+<span style="color:#75715e"># Check status vs main</span>
+git status
+<span style="color:#75715e"># Push changes</span>
+git add .
+git commit -m <span style="color:#e6db74">&#34;message&#34;</span>
+git push
+<span style="color:#75715e"># Or for new branch</span>
+git push origin feature_x
+<span style="color:#75715e"># Rebase branch with main</span>
+git rebase main
+<span style="color:#75715e"># Merge branch with main</span>
+git checkout master
+git merge feature_x --no-ff
+<span style="color:#75715e"># Delete branch</span>
+git branch -d feature_x
+<span style="color:#75715e"># Tag new merge</span>
+git tag -a v1.3.0 -m <span style="color:#e6db74">&#34;message&#34;</span></code></pre></div>
 <h2 id="check-if-repo-is-ahead-or-behind">Check if repo is ahead or behind</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git fetch
 <span style="color:#75715e"># Following command lists &#34;{local} {remote}&#34;</span>
@@ -184,7 +207,7 @@ git rm -f path/to/submodule</code></pre></div>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://mytechkb.com/" >
-    &copy;  MyTechKB 2022 
+    &copy;  MyTechKB 2023 
   </a>
     <div>
 <div class="ananke-socials">
